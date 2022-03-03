@@ -1,6 +1,6 @@
 ## API used
 
-[University Domains and Names](universities.hipolabs.com)
+[University Domains and Names](http://universities.hipolabs.com)
 
 ## How to run
 
