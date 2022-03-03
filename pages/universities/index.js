@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Anchor from "../../components/anchor";
 import Container from "../../components/container";
 import getUniversities from "../api/universities";
