@@ -1,23 +1,23 @@
-const apiURL = 'http://universities.hipolabs.com/search?country=Mexico'
+const apiURL = "http://universities.hipolabs.com/search?country=Mexico";
 
 export default async function getUniversities() {
-    const request = await fetch(apiURL)
-    const universities = await request.json();
+  const request = await fetch(apiURL);
+  const universities = await request.json();
 
-    return {
-        props: {
-            universities
-        }
-    }
+  return {
+    props: {
+      universities,
+    },
+  };
 }
 
 export async function getUniversity(name) {
-    const request = await fetch(`${apiURL}&name=${name}`)
-    const university = await request.json();
+  const request = await fetch(`${apiURL}&name=${name}`);
+  const university = await request.json();
 
-    return {
-        props: {
-            university: university[0]
-        }
-    }
+  return {
+    props: {
+      university: university[0],
+    },
+  };
 }
