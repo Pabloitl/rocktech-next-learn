@@ -1,7 +1,6 @@
 import Anchor from "../../components/anchor";
 import Card from "../../components/card";
 import Container from "../../components/container";
-import Image from "next/image";
 import getUniversities, { getUniversity } from "../api/universities";
 
 export default function University({ university }) {
