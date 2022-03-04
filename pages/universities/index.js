@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Anchor from "../../components/anchor";
 import Container from "../../components/container";
 import getUniversities from "../api/universities";
@@ -8,11 +7,9 @@ export default function Universities({ universities }) {
     <Container>
       <h2 className="text-lg text-center">List of Universities</h2>
       <div className="p-5 text-center">
-        <Image
+        <img
           alt="Books"
           src="https://sbooks.net/wp-content/uploads/2021/10/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg"
-          width={1600}
-          height={789}
         />
       </div>
       <ul className="p-4 text-center">

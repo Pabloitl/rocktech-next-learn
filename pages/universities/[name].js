@@ -9,11 +9,9 @@ export default function University({ university }) {
     <Container>
       <h1 className="p-1 text-xl"> {university.name} </h1>
       <div className="p-10">
-        <Image
+        <img
           alt="University"
-          src="/university.jpeg"
-          width={2048}
-          height={916}
+          src="/images/university.jpeg"
         />
       </div>
       <Card>

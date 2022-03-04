@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
-    images: {
-        domains: [ 'sbooks.net' ]
-    }
-}
+const withOptimizedImages = require("next-optimized-images");
 
-module.exports = nextConfig
+const nextConfig = {
+  reactStrictMode: true,
+  disableStaticImages: true,
+  images: {
+    domains: ["sbooks.net"],
+  },
+};
+
+module.exports = withOptimizedImages({
+    ... nextConfig,
+});
