@@ -1,12 +1,21 @@
 import Anchor from "../../components/anchor";
 import Card from "../../components/card";
 import Container from "../../components/container";
+import Image from "next/image";
 import getUniversities, { getUniversity } from "../api/universities";
 
 export default function University({ university }) {
   return (
     <Container>
       <h1 className="p-1 text-xl"> {university.name} </h1>
+      <div className="p-10">
+        <Image
+          alt="University"
+          src="/university.jpeg"
+          width={2048}
+          height={916}
+        />
+      </div>
       <Card>
         <p> Country: {university.country} </p>
         <p> Code: {university.alpha_two_code} </p>
