@@ -13,11 +13,11 @@ export default async function getUniversities() {
 
 export async function getUniversity(name) {
   const request = await fetch(`${apiURL}&name=${name}`);
-  const university = await request.json();
+  const [ university ] = await request.json();
 
   return {
     props: {
-      university: university[0],
+      university: university || null,
     },
   };
 }
