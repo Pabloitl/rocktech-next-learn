@@ -4,6 +4,13 @@ import Container from "../../components/container";
 import getUniversities, { getUniversity } from "../api/universities";
 
 export default function University({ university }) {
+  if (!university)
+    return (
+      <Container>
+        <h1>Cannot fetch this universitys information</h1>
+      </Container>
+    );
+
   return (
     <Container>
       <h1 className="p-1 text-xl"> {university.name} </h1>
