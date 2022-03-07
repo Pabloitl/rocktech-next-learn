@@ -6,9 +6,10 @@ const nextConfig = {
   disableStaticImages: true,
   images: {
     domains: ["sbooks.net"],
+    disableStaticImages: true,
   },
 };
 
 module.exports = withOptimizedImages({
-    ... nextConfig,
+  ...nextConfig,
 });
